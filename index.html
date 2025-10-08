@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Havilah Foodies - A culinary experience like no other. Discover exceptional dining with our curated menu, elegant ambiance, and unforgettable flavors.">
+    <meta name="keywords" content="restaurant, dining, food, catering, delivery, Havilah Foodies">
+    <title>Havilah Foodies | A Culinary Experience Like No Other</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Havilah Foodies",
+      "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4",
+      "description": "A culinary experience like no other featuring exceptional dining and unforgettable flavors",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Gourmet Street",
+        "addressLocality": "Lagos",
+        "addressRegion": "Lagos",
+        "postalCode": "100001",
+        "addressCountry": "NG"
+      },
+      "telephone": "+234-801-234-5678",
+      "email": "info@havilahfoodies.com",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "10:00",
+          "closes": "22:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday", "Sunday"],
+          "opens": "09:00",
+          "closes": "23:00"
+        }
+      ],
+      "servesCuisine": ["International", "Contemporary"],
+      "priceRange": "$$",
+      "menu": "https://havilahfoodies.com/menu.pdf"
+    }
+    </script>
+    
+   
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Havilah Foodies</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+               
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <video autoplay muted loop playsinline id="hero-video" poster="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920">
+            <source src="https://cdn.coverr.co/videos/coverr-restaurant-fine-dining-7128/1080p.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Havilah Foodies</h1>
+            <p>A Culinary Experience Like No Other</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn-custom btn-primary-custom">View Our Menu</a>
+                <a href="#contact" class="btn-custom btn-secondary-custom">Reserve a Table</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content" data-aos="fade-up">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800" alt="Restaurant Interior" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>At Havilah Foodies, we believe that exceptional dining goes beyond just food. It's about creating unforgettable moments, fostering connections, and celebrating the art of culinary excellence. Founded with a passion for bringing people together through extraordinary flavors, our restaurant has become a beloved destination for food enthusiasts and families alike.</p>
+                    <p>Our talented chefs blend traditional techniques with innovative approaches, sourcing the finest local and international ingredients to craft dishes that delight the senses. Every plate tells a story, and every visit promises a new chapter in your culinary journey.</p>
+                    <p>Whether you're celebrating a special occasion or simply enjoying a meal with loved ones, Havilah Foodies offers an ambiance of warmth, elegance, and genuine hospitality that makes every dining experience truly memorable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Our Menu Highlights</h2>
+                <p>Discover our most loved dishes, crafted with passion and the finest ingredients</p>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600" alt="Gourmet Pizza" class="menu-item-image" loading="lazy">
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Truffle Pizza</h3>
+                            <span class="menu-item-price">₦8,500</span>
+                        </div>
+                        <p class="menu-item-description">Wood-fired artisan pizza topped with wild mushrooms, truffle oil, fresh mozzarella, and arugula</p>
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1546039907-7fa05f864c02?w=600" alt="Grilled Salmon" class="menu-item-image" loading="lazy">
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Atlantic Salmon</h3>
+                            <span class="menu-item-price">₦12,000</span>
+                        </div>
+                        <p class="menu-item-description">Perfectly grilled salmon fillet with lemon butter sauce, roasted vegetables, and herb-infused quinoa</p>
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=600" alt="Ribeye Steak" class="menu-item-image" loading="lazy">
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Prime Ribeye</h3>
+                            <span class="menu-item-price">₦15,500</span>
+                        </div>
+                        <p class="menu-item-description">12oz premium ribeye steak, grilled to perfection, served with truffle mashed potatoes and seasonal greens</p>
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600" alt="Breakfast" class="menu-item-image" loading="lazy">
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Continental Breakfast</h3>
+                            <span class="menu-item-price">₦5,500</span>
+                        </div>
+                        <p class="menu-item-description">Fresh pastries, seasonal fruits, scrambled eggs, bacon, sausages, and your choice of coffee or tea</p>
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600" alt="Pasta" class="menu-item-image" loading="lazy">
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Seafood Linguine</h3>
+                            <span class="menu-item-price">₦9,800</span>
+                        </div>
+                        <p class="menu-item-description">Fresh linguine with prawns, mussels, calamari in a rich garlic white wine sauce, topped with parsley</p>
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?w=600" alt="Dessert" class="menu-item-image" loading="lazy">
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Chocolate Lava Cake</h3>
+                            <span class="menu-item-price">₦4,200</span>
+                        </div>
+                        <p class="menu-item-description">Decadent molten chocolate cake with a warm, gooey center, served with vanilla ice cream and berry compote</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-cta" data-aos="fade-up">
+                <a href="menu.html" class="btn-menu">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Our Services</h2>
+                <p>Experience excellence in every way we serve you</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Dine-In</h3>
+                    <p>Enjoy our elegant ambiance and impeccable service in a sophisticated setting designed for memorable dining experiences with family and friends.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <h3>Take-Out</h3>
+                    <p>Savor our delicious cuisine in the comfort of your home. Quick, convenient, and prepared with the same care as our dine-in service.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <h3>Catering</h3>
+                    <p>Make your special events extraordinary with our professional catering services. From intimate gatherings to grand celebrations, we've got you covered.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Gallery</h2>
+                <p>A visual journey through our culinary artistry and inviting ambiance</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600" alt="Gourmet Dish" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600" alt="Restaurant Interior" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600" alt="Fresh Salad" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600" alt="Chef Cooking" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600" alt="Happy Customers" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600" alt="Pancakes" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img src="" alt="Gallery Image" class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>What Our Guests Say</h2>
+                <p>Hear from those who have experienced the magic of Havilah Foodies</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-item active">
+                    <p class="testimonial-text">"Absolutely phenomenal! From the moment we walked in, we were treated like family. The food was exquisite, and the ambiance was perfect for our anniversary dinner. We'll definitely be back!"</p>
+                    <p class="testimonial-author">Sarah & Michael Johnson</p>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <p class="testimonial-text">"Havilah Foodies never disappoints! The truffle pizza is to die for, and their seafood linguine is the best I've had in Lagos. The service is impeccable, and the atmosphere is so welcoming."</p>
+                    <p class="testimonial-author">Chidi Okafor</p>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <p class="testimonial-text">"We hired Havilah Foodies for our corporate event, and they exceeded all expectations. The catering was flawless, the presentation was beautiful, and our guests couldn't stop raving about the food!"</p>
+                    <p class="testimonial-author">Aisha Mohammed</p>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <span class="testimonial-dot active" data-slide="0"></span>
+                <span class="testimonial-dot" data-slide="1"></span>
+                <span class="testimonial-dot" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Contact & Reservation</h2>
+                <p>We'd love to hear from you. Reach out for reservations or inquiries</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>No 9 Major Bowen D Delta NG, New Ogorode Rd, Sapele, 331107</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+234-801-234-5678<br>+234-802-345-6789</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@havilahfoodies.com<br>reservations@havilahfoodies.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Opening Hours</h4>
+                            <p>Mon - Fri: 10:00 AM - 10:00 PM<br>Sat - Sun: 9:00 AM - 11:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="reservation-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Date *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Time *</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Number of Guests *</label>
+                            <input type="number" id="guests" name="guests" min="1" max="20" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Special Requests (Optional)</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Make Reservation</button>
+                    </form>
+                </div>
+            </div>
+            <div class="map-container" data-aos="fade-up">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.795057742071!2d5.693550374042155!3d5.884397630262059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1040e351cea4c4f3%3A0x2e129c975a7ab4cc!2sHAVILAH%20FOODIES!5e0!3m2!1sen!2sng!4v1759903578505!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Havilah Foodies</h3>
+                    <p>A culinary destination where passion meets excellence. Join us for an unforgettable dining experience that celebrates the art of exceptional food and warm hospitality.</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://youtube.com" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> No 9 Major Bowen D Delta NG, New Ogorode Rd, Sapele, 331107</p>
+                    <p><i class="fas fa-phone-alt"></i> +234-801-234-5678</p>
+                    <p><i class="fas fa-envelope"></i> info@havilahfoodies.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Payment Options</h3>
+                    <p>We Accept:</p>
+                    <p>Cash, Credit/Debit Cards<br>Visa, Mastercard, Verve<br>Bank Transfers</p>
+                    <p style="margin-top: 20px;"><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Havilah Foodies. All Rights Reserved. Designed with passion for exceptional dining.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 80;
+                    const targetPosition = target.offsetTop - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                    // Close mobile menu if open
+                    const navbarCollapse = document.querySelector('.navbar-collapse');
+                    if (navbarCollapse.classList.contains('show')) {
+                        navbarCollapse.classList.remove('show');
+                    }
+                }
+            });
+        });
+
+        // Gallery Lightbox
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxClose = document.querySelector('.lightbox-close');
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const imgSrc = this.querySelector('img').src;
+                lightboxImg.src = imgSrc;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        lightboxClose.addEventListener('click', function() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Testimonial Slider
+        let currentSlide = 0;
+        const testimonialItems = document.querySelectorAll('.testimonial-item');
+        const testimonialDots = document.querySelectorAll('.testimonial-dot');
+
+        function showSlide(n) {
+            testimonialItems.forEach(item => item.classList.remove('active'));
+            testimonialDots.forEach(dot => dot.classList.remove('active'));
+            
+            currentSlide = n;
+            if (currentSlide >= testimonialItems.length) currentSlide = 0;
+            if (currentSlide < 0) currentSlide = testimonialItems.length - 1;
+            
+            testimonialItems[currentSlide].classList.add('active');
+            testimonialDots[currentSlide].classList.add('active');
+        }
+
+        testimonialDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => showSlide(index));
+        });
+
+        // Auto-slide testimonials
+        setInterval(() => {
+            showSlide(currentSlide + 1);
+        }, 5000);
+
+        // Form Submission
+        const reservationForm = document.getElementById('reservation-form');
+        reservationForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Here you would normally send the data to a server
+            console.log('Reservation Data:', data);
+            
+            // Show success message
+            alert('Thank you for your reservation! We will contact you shortly to confirm your booking.');
+            this.reset();
+        });
+
+        // Scroll to Top Button
+        const scrollTopBtn = document.getElementById('scroll-top');
+
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                scrollTopBtn.classList.add('active');
+            } else {
+                scrollTopBtn.classList.remove('active');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Set minimum date for reservation to today
+        const dateInput = document.getElementById('date');
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.setAttribute('min', today);
+
+        // Lazy loading for images
+        if ('loading' in HTMLImageElement.prototype) {
+            const images = document.querySelectorAll('img[loading="lazy"]');
+            images.forEach(img => {
+                img.src = img.src;
+            });
+        } else {
+            // Fallback for browsers that don't support lazy loading
+            const script = document.createElement('script');
+            script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
+            document.body.appendChild(script);
+        }
+    </script>
+</body>
+</html>
